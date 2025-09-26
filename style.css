@@ -148,6 +148,11 @@ footer {
     color: #fff;
 }
 
+.contact p{
+    padding-right: 500px;
+    text-align: left;
+}
+
 .contact {
     background-color:#411d17;
 }
@@ -157,7 +162,6 @@ footer {
     width: 200px;
     height: auto;
     text-align: justify;
-    text-decoration: none;
 }
 
 .info  {
