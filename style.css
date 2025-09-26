@@ -171,3 +171,34 @@ footer {
    
 
 }
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    .contact {
+        padding: 10px;
+        background-color: #411d17; /* garante o marrom */
+    }
+
+    .wpplogo img {
+        width: 100px; /* reduz a logo */
+        height: auto;
+        padding: 5px;
+    }
+
+    .info {
+        flex-direction: column; /* coloca logo em cima e texto embaixo */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact iframe {
+        width: 100%; /* iframe ocupa toda a largura disponível */
+        height: 200px; /* reduz altura para caber na tela */
+        margin-top: 10px;
+    }
+
+    .contact-content {
+        flex-direction: column; /* container do iframe e info empilha verticalmente */
+        align-items: center;
+    }
+}
