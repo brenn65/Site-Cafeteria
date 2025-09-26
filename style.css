@@ -7,6 +7,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @media (max-width:768px) {
     .card{
         width: 100%;
