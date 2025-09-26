@@ -157,6 +157,7 @@ footer {
     width: 200px;
     height: auto;
     text-align: justify;
+    text-decoration: none;
 }
 
 .info  {
@@ -165,14 +166,14 @@ footer {
     text-align: left;
     padding: 10px 10px;
     color: #fff;
+    justify-content: space-between;
 
 }
 
 .contact iframe{
     padding: 10px 10px;
     text-align: left ;
-    border-radius: 5%;
-   
+    border-radius: 5%;   
 
 }
 
@@ -187,6 +188,7 @@ footer {
         width: 100px; /* reduz a logo */
         height: auto;
         padding: 5px;
+        
     }
 
     .info {
