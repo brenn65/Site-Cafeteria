@@ -188,6 +188,12 @@ footer {
         background-color: #411d17; /* garante o marrom */
     }
 
+    .contact p{
+        padding: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
     .wpplogo img {
         width: 100px; /* reduz a logo */
         height: auto;
