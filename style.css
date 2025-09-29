@@ -124,11 +124,21 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     transition: tranform 0.3s;
+    & img {
+        height: 0px;
+        transition: height 2s ease;
+    }
+    
 }
+
+
 
 .card:hover {
     transform: translateY(-5px);
     background-color: bisque;
+    & img {
+        height: 200px;
+    }
 }
 
 .card h3 {
