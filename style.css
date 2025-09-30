@@ -276,10 +276,15 @@ footer {
 }
 
 
-
+.insta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
     .insta img {
-        width: 145px;
+        width: 140px;
         /* reduz a logo */
         height: auto;
         margin-left: 70%;
