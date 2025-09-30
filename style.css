@@ -3,16 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    
+
 
 }
 
-html{
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 @media (max-width:768px) {
-    .card{
+    .card {
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -23,8 +28,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #3e2723;
-    padding-top: 10px ;
-    padding-left: 15px ;
+    padding-top: 10px;
+    padding-left: 15px;
     padding-right: 20px;
 }
 
@@ -52,7 +57,7 @@ nav a:hover {
 
 .hero {
     height: 100vh;
-      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -95,11 +100,13 @@ nav a:hover {
     text-align: center;
 }
 
-.teste{
+.teste {
     color: #fff;
     background-color: #411d17;
 }
+
 .destaques h2 {
+    padding-bottom: 10px;
     font-size: 2rem;
     margin-bottom: 40px;
     color: #3e2723;
@@ -124,12 +131,13 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     transition: tranform 0.3s;
+
     & img {
         padding-top: 10px;
         height: 0px;
         transition: height 2s ease;
     }
-    
+
 }
 
 
@@ -137,6 +145,7 @@ nav a:hover {
 .card:hover {
     transform: translateY(-5px);
     background-color: bisque;
+
     & img {
         height: 200px;
     }
@@ -151,44 +160,78 @@ footer {
     text-align: center;
     color: #fff;
     background-color: #3e2723;
-    padding: 20px;}
+    padding: 20px;
+}
 
-.contact h2{
+.contact h2 {
+    padding-top: 10px;
     padding-left: 5px;
     text-align: left;
     color: #fff;
 }
 
-.contact p{
+.contact p {
     padding-right: 500px;
     text-align: left;
 }
 
 .contact {
-    background-color:#411d17;
+    background-color: #411d17;
 }
 
-.wpplogo img{
+.wpplogo img {
     padding: 10px 10px;
+    margin-left: -18%;
     width: 200px;
     height: auto;
     text-align: justify;
 }
 
-.info  {
+.wpplogo p {
+    margin-left: -32%;
+    text-align: center;
+}
+
+.info {
+    margin-left: -30%;
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: justify;
     padding: 10px 10px;
     color: #fff;
     justify-content: space-between;
 
 }
 
-.contact iframe{
+.insta {
+    align-items: center;
+    margin-right: -20%;
+    margin-left: -50%;
+    display: flex;
+    gap: 20px;
+}
+
+.instagram img {
+    width: 230px;
+    height: auto;
+    text-align: justify;
+    justify-content: left;
+}
+
+.insta p {
+    display: flex;
     padding: 10px 10px;
-    text-align: left ;
-    border-radius: 5%;   
+    margin-left: 12%;
+    margin-top: -5%;
+
+
+}
+
+
+.contact iframe {
+    padding: 10px 10px;
+    text-align: left;
+    border-radius: 5%;
 
 }
 
@@ -196,36 +239,84 @@ footer {
 @media (max-width: 600px) {
     .contact {
         padding: 10px;
-        background-color: #411d17; /* garante o marrom */
+        background-color: #411d17;
+        /* garante o marrom */
     }
 
-    .contact p{
+    .contact p {
         padding: 0;
         text-align: center;
         margin-top: 10px;
     }
+    
+.teste{
+    padding-bottom: 5%;
 
-    .wpplogo img {
-        width: 100px; /* reduz a logo */
+}
+
+   .wpplogo {
+    display: flex;
+    flex-direction: column; /* empilha img em cima e p embaixo */
+    align-items: center;    /* centraliza horizontalmente */
+    text-align: center;     /* centraliza texto do <p> */
+    margin-left: 20%;       /* empurra o container 20% para a direita */
+}
+
+.wpplogo img {
+    width: 100px;   /* mantém a logo menor */
+    height: auto;
+    padding: 5px;
+    margin: 0;      /* remove margens desnecessárias */
+}
+
+.wpplogo p {
+    margin: 10px 0 0 0; /* só espaço em cima */
+    max-width: 250px;   /* opcional, não ultrapassa o container */
+    text-align: center; /* garante centralização do texto */
+}
+
+
+
+
+    .insta img {
+        width: 145px;
+        /* reduz a logo */
         height: auto;
+        margin-left: 70%;
         padding: 5px;
-        
+        justify-content: center;
+
+
+    }
+
+    .insta p {
+        margin-top: -8%;
+        white-space: nowrap;
+        text-justify: center;
+        margin-left: 65%;
+
     }
 
     .info {
-        flex-direction: column; /* coloca logo em cima e texto embaixo */
+        flex-direction: column;
+        /* coloca logo em cima e texto embaixo */
         align-items: center;
         text-align: center;
     }
 
     .contact iframe {
-        width: 100%; /* iframe ocupa toda a largura disponível */
-        height: 200px; /* reduz altura para caber na tela */
+        width: 300px;
+        /* iframe ocupa toda a largura disponível */
+        height: auto;
+        /* reduz altura para caber na tela */
         margin-top: 10px;
+        margin-left: 25%;
+        justify-content: space-between;
     }
 
     .contact-content {
-        flex-direction: column; /* container do iframe e info empilha verticalmente */
+        flex-direction: column;
+        /* container do iframe e info empilha verticalmente */
         align-items: center;
     }
 }
