@@ -105,6 +105,17 @@ nav a:hover {
     background-color: #411d17;
 }
 
+.box {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    background-color: #411d17;
+
+}
+
 .destaques h2 {
     padding-bottom: 10px;
     font-size: 2rem;
@@ -113,7 +124,7 @@ nav a:hover {
     background-color: #411d17;
 }
 
-.cards {
+.cards { /*Versão antiga*/
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -135,6 +146,7 @@ nav a:hover {
     & img {
         padding-top: 10px;
         height: 0px;
+        width: 200px;
         transition: height 2s ease;
     }
 
@@ -248,40 +260,49 @@ footer {
         text-align: center;
         margin-top: 10px;
     }
-    
-.teste{
-    padding-bottom: 5%;
 
-}
+    .teste {
+        padding-bottom: 5%;
 
-   .wpplogo {
-    display: flex;
-    flex-direction: column; /* empilha img em cima e p embaixo */
-    align-items: center;    /* centraliza horizontalmente */
-    text-align: center;     /* centraliza texto do <p> */
-    margin-left: 20%;       /* empurra o container 20% para a direita */
-}
+    }
 
-.wpplogo img {
-    width: 100px;   /* mantém a logo menor */
-    height: auto;
-    padding: 5px;
-    margin: 0;      /* remove margens desnecessárias */
-}
+    .wpplogo {
+        display: flex;
+        flex-direction: column;
+        /* empilha img em cima e p embaixo */
+        align-items: center;
+        /* centraliza horizontalmente */
+        text-align: center;
+        /* centraliza texto do <p> */
+        margin-left: 20%;
+        /* empurra o container 20% para a direita */
+    }
 
-.wpplogo p {
-    margin: 10px 0 0 0; /* só espaço em cima */
-    max-width: 250px;   /* opcional, não ultrapassa o container */
-    text-align: center; /* garante centralização do texto */
-}
+    .wpplogo img {
+        width: 100px;
+        /* mantém a logo menor */
+        height: auto;
+        padding: 5px;
+        margin: 0;
+        /* remove margens desnecessárias */
+    }
+
+    .wpplogo p {
+        margin: 10px 0 0 0;
+        /* só espaço em cima */
+        max-width: 250px;
+        /* opcional, não ultrapassa o container */
+        text-align: center;
+        /* garante centralização do texto */
+    }
 
 
-.insta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    .insta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
     .insta img {
         width: 140px;
@@ -323,5 +344,14 @@ footer {
         flex-direction: column;
         /* container do iframe e info empilha verticalmente */
         align-items: center;
+    }
+
+    .box{
+        display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #411d17;
+    padding-bottom: 10px;
     }
 }
