@@ -23,6 +23,23 @@ html {
     }
 }
 
+/*header { header transparente projeto futuro
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    background-color: rgba(62, 39, 35, 0.3);
+  backdrop-filter: blur(10px);
+}
+*/
+
 header {
     display: flex;
     justify-content: space-between;
