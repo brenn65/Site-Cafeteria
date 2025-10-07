@@ -23,7 +23,7 @@ html {
     }
 }
 
-/*header { header transparente projeto futuro
+header {
     display: flex;
     position: fixed;
     top: 0;
@@ -38,9 +38,8 @@ html {
     background-color: rgba(62, 39, 35, 0.3);
   backdrop-filter: blur(10px);
 }
-*/
 
-header {
+/*header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +47,7 @@ header {
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 20px;
-}
+} */ /* Versão antiga do header */
 
 header .logo {
     font-size: 1.5rem;
