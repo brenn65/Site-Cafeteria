@@ -39,7 +39,15 @@ header .logo {
     color: #fff;
 }
 
+/* Alterações no espaçamento da logo */
+.logo {
+    padding-bottom: 10px;
+}
+
+
+/* Alterações no espaçamento da fonte */
 nav ul {
+    padding-bottom: 5px;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -101,18 +109,20 @@ nav a:hover {
 }
 
 .teste {
+    padding: 10px 10px;
     color: #fff;
     background-color: #411d17;
 }
 
 .box {
     display: flex;
-    gap: 50px;
+    flex: auto;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: left;
     background-color: #411d17;
+    padding-bottom: 10px;
 
 }
 
@@ -124,7 +134,8 @@ nav a:hover {
     background-color: #411d17;
 }
 
-.cards { /*Versão antiga*/
+.cards {
+    /*Versão antiga*/
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -346,12 +357,12 @@ footer {
         align-items: center;
     }
 
-    .box{
+    .box {
         display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    background-color: #411d17;
-    padding-bottom: 10px;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        background-color: #411d17;
+        padding-bottom: 10px;
     }
 }
